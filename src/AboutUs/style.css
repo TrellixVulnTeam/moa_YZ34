@@ -1,0 +1,421 @@
+.about-us-top-wrapper {
+  overflow-x: hidden;
+}
+
+/* ABOUT US PAGE HEADER */
+.about-us-header {
+  height: 100vh;
+  width: 100vw;
+  background: url(./assets/about-us-header.png) center no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  padding: 20px;
+  overflow: hidden;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-us-header > h1 {
+  font-weight: 700;
+  font-size: xx-large;
+  margin-bottom: 20px;
+}
+
+.about-us-header > p {
+  font-weight: 400;
+  font-size: medium;
+  text-align: center;
+}
+
+.about-us-header > button {
+  background: #06060a;
+  border: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -200%);
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: small;
+  padding: 10px 25px;
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.about-us-header > button > a {
+  color: white;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-us-header > button:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(250, 75, 167, 1) 20%,
+    rgba(111, 63, 249, 1) 39%,
+    rgba(81, 140, 254, 1) 75%,
+    rgba(0, 209, 255, 1) 100%
+  );
+}
+
+.about-us-header > button > a > span {
+  transition: all 0.3s ease;
+}
+
+.about-us-header > button:hover > a > span {
+  transform: translateX(-5%);
+}
+
+.about-us-header > button:hover > a > img {
+  transform: translateX(50%);
+}
+
+.about-us-right-btn-icon {
+  height: 5px;
+  width: 5x;
+  margin-left: 10px;
+  transition: all 0.6s ease;
+}
+
+/* WHO WE ARE */
+
+.about-us-who-we-are-wrapper {
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  overflow: hidden;
+}
+.about-us-who-we-are-wrapper > h1 {
+  font-weight: 700;
+  font-size: xx-large;
+  margin-bottom: 20px;
+}
+
+.about-us-who-we-are-wrapper > p {
+  font-weight: 400;
+  font-size: medium;
+  text-align: center;
+}
+
+.about-us-who-we-are-box {
+  background-color: #1f2332;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  color: white;
+  padding: 5px;
+  font-size: medium;
+  border-radius: 4px;
+}
+.about-us-who-we-are-box h6 {
+  font-weight: 700;
+  font-size: large;
+  background: -webkit-linear-gradient(300deg, #fa4b8b 0%, #00d1ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* OUR MISSION */
+.about-us-our-mission-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.about-us-our-mission-wrapper h1 {
+  font-weight: 700;
+  font-size: xx-large;
+  margin-bottom: 10px;
+}
+
+.about-us-our-mission-wrapper p {
+  font-weight: 400;
+  font-size: medium;
+  text-align: center;
+}
+
+.about-us-our-mission-boxes-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 80vh;
+}
+
+.about-us-our-mission-box {
+  width: 100%;
+  max-width: 280px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1f2332;
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+}
+.about-us-our-mission-box img {
+  width: 100px;
+  object-fit: cover;
+}
+
+.about-us-our-mission-box h6 {
+  font-size: large;
+}
+
+.about-us-our-mission-box p {
+  font-size: x-small;
+}
+
+/* VISION */
+
+.about-us-vision-wrapper {
+  width: 100vw;
+  height: 100vh;
+}
+.about-us-img-bg {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./assets/vision.png) center no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.about-us-img-bg > h1 {
+  font-weight: 700;
+  font-size: xx-large;
+  margin-bottom: 10px;
+}
+
+.about-us-img-bg > p {
+  font-weight: 400;
+  font-size: medium;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-us-img-bg > button {
+  background-color: transparent;
+  border: none;
+}
+
+.about-us-img-bg > button > a {
+  color: white;
+  text-decoration: none;
+}
+.about-us-img-bg > button > a > img {
+  height: 10px;
+  width: 10x;
+  margin-left: 10px;
+}
+
+/* MEDIA QUERRIES */
+@media only screen and (min-width: 600px) {
+  .about-us-header > h1 {
+    font-size: 120px;
+  }
+  .about-us-header > h2 {
+    font-size: 85px;
+    line-height: 1;
+  }
+  .about-us-header > p {
+    font-size: 18px;
+    max-width: 70%;
+    width: 1300px;
+  }
+  .about-us-header > button {
+    border-radius: 8px;
+    height: 54px;
+    width: 256px;
+  }
+
+  .about-us-header > button > a > span {
+    font-size: 18px;
+  }
+  .about-us-right-btn-icon {
+    height: 12px;
+    width: 12px;
+  }
+
+  /* who we are  */
+  .about-us-who-we-are-wrapper > h1 {
+    font-size: 86px;
+  }
+
+  .about-us-who-we-are-wrapper > p {
+    font-size: 18px;
+    line-height: 24px;
+    max-width: 75%;
+    width: 1300px;
+  }
+  .about-us-who-we-are-boxes-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .about-us-who-we-are-box {
+    height: 120px;
+    width: 450px;
+    max-width: 40%;
+    border-radius: 6px;
+  }
+
+  .about-us-who-we-are-box h6 {
+    font-size: 24px;
+  }
+  .about-us-who-we-are-box p {
+    font-size: 18px;
+  }
+
+  /* OUR MISSION */
+  .about-us-our-mission-wrapper h1 {
+    font-size: 86px;
+  }
+  .about-us-our-mission-wrapper p {
+    font-size: 18px;
+  }
+  .about-us-our-mission-boxes-wrapper {
+    flex-direction: row;
+    max-width: 85%;
+    width: 1800px;
+    align-items: flex-start;
+    margin-top: 50px;
+  }
+  .about-us-our-mission-box {
+    height: 350px;
+    width: 333px;
+    max-height: 80%;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    max-width: none;
+  }
+  .about-us-our-mission-box img {
+    height: 150px;
+    width: auto;
+    max-width: 100%;
+    object-fit: cover;
+    align-self: center;
+    margin-bottom: 10px;
+  }
+  .about-us-our-mission-box-text-wrapper {
+    height: 60%;
+  }
+  .about-us-our-mission-box h6 {
+    font-size: 38px;
+  }
+  .about-us-our-mission-box p {
+    text-align: left;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  /* VISION */
+
+  .about-us-vision-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-us-img-bg {
+    width: 100%;
+    height: 60%;
+  }
+
+  .about-us-img-bg > h1 {
+    font-size: 40px;
+  }
+  .about-us-img-bg > p {
+    font-size: 12px;
+  }
+  .about-us-img-bg > button > a > span {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .about-us-who-we-are-wrapper > h1 {
+    font-size: 120px;
+  }
+  .about-us-who-we-are-wrapper > p {
+    font-size: 24px;
+    line-height: 35px;
+  }
+  .about-us-who-we-are-box h6 {
+    font-size: 48px;
+  }
+  .about-us-who-we-are-box p {
+    font-size: 24px;
+  }
+  .about-us-who-we-are-box {
+    height: 160px;
+    width: 500px;
+    border-radius: 8px;
+  }
+  /* OUR MISSION */
+  .about-us-our-mission-wrapper h1 {
+    font-size: 120px;
+  }
+  .about-us-our-mission-wrapper p {
+    font-size: 24px;
+  }
+  .about-us-our-mission-box img {
+    height: 200px;
+    margin-bottom: 0px;
+    margin-bottom: 30px;
+  }
+  .about-us-our-mission-box {
+    height: 618px;
+    width: 533px;
+    padding: 30px;
+    justify-content: space-between;
+    max-width: 30%;
+  }
+  .about-us-our-mission-box h6 {
+    font-size: 48px;
+  }
+  .about-us-our-mission-box p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .about-us-img-bg > h1 {
+    font-size: 80px;
+  }
+  .about-us-img-bg > p {
+    font-size: 18px;
+  }
+  .about-us-img-bg > button > a > span {
+    font-size: 18px;
+  }
+}
