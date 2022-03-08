@@ -52,7 +52,6 @@ const CassinoAndBetting = () => {
           start: 'top bottom',
           end: 'center center',
           scrub: 1,
-          markers: true,
         },
       })
       .from(block1Img.current, {
@@ -66,7 +65,6 @@ const CassinoAndBetting = () => {
           start: 'top bottom',
           end: 'center center',
           scrub: 1,
-          markers: true,
         },
       })
       .from(block2Img.current, {
