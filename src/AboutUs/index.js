@@ -5,8 +5,51 @@ import grow from './assets/grow.svg';
 import improve from './assets/improve.svg';
 import Navbar from '../NavBar';
 import Footer from '../Footer';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useEffect, useRef } from 'react';
 
 const AboutUs = () => {
+  gsap.registerPlugin(ScrollTrigger);
+  const whoWeAreWrapper = useRef();
+  const whoWeAreHeading = useRef();
+  const whoWeArePara1 = useRef();
+  const whoWeArePara2 = useRef();
+  const whoWeArePara3 = useRef();
+  const whoWeAreButton1 = useRef();
+  const whoWeAreButton2 = useRef();
+
+  useEffect(() => {
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: whoWeAreWrapper.current,
+          start: 'top 75%',
+          end: 'top top',
+          markers: true,
+          scrub: 1,
+        },
+      })
+      .from(whoWeAreHeading.current, {
+        y: 100,
+      })
+      .from(whoWeArePara1.current, {
+        y: 200,
+      })
+      .from(whoWeArePara2.current, {
+        y: 200,
+      })
+      .from(whoWeArePara3.current, {
+        y: 200,
+      })
+      .from(whoWeAreButton1.current, {
+        y: 200,
+      })
+      .from(whoWeAreButton2.current, {
+        y: 200,
+      });
+  }, []);
+
   return (
     <>
       <Navbar />
@@ -29,20 +72,20 @@ const AboutUs = () => {
           </button>
         </div>
 
-        <div className='about-us-who-we-are-wrapper'>
-          <h1>Who We Are</h1>
-          <p>
+        <div className='about-us-who-we-are-wrapper' ref={whoWeAreWrapper}>
+          <h1 ref={whoWeAreHeading}>Who We Are</h1>
+          <p ref={whoWeArePara1}>
             It all started 18 years ago when a group of technology geeks came up
             with the idea of MOA gaming. With our main development office based
             in Armenia, our international company has managed to come a long
             way.
           </p>
-          <p>
+          <p ref={whoWeArePara2}>
             Our passion for innovation and the immense interest in a safe gaming
             experience have always been the two main driving forces of our
             company.
           </p>
-          <p>
+          <p ref={whoWeArePara3}>
             Today MOA gaming is one of the leading voices in the online gaming
             industry, offering services to operators from all over the world.
             Our products include{' '}
@@ -57,11 +100,11 @@ const AboutUs = () => {
             </strong>
           </p>
           <div className='about-us-who-we-are-boxes-wrapper'>
-            <div className='about-us-who-we-are-box'>
+            <div ref={whoWeAreButton1} className='about-us-who-we-are-box'>
               <h6>15 +</h6>
               <p>Customizable Services and Solutions</p>
             </div>
-            <div className='about-us-who-we-are-box'>
+            <div ref={whoWeAreButton2} className='about-us-who-we-are-box'>
               <h6>30 +</h6>
               <p>Trusted Partners</p>
             </div>
@@ -129,7 +172,9 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      <div className='about-us-footer-wrapper'>
+        <Footer />
+      </div>
     </>
   );
 };
