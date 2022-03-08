@@ -7,7 +7,7 @@ import Navbar from '../NavBar';
 import Footer from '../Footer';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import {  useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 
 const AboutUs = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -32,35 +32,38 @@ const AboutUs = () => {
     //who we are
     gsap
       .timeline({
+        defaults: {
+          ease: 'Power2.easeOut',
+        },
         scrollTrigger: {
           trigger: whoWeAreWrapper.current,
-          start: '25% bottom',
-          end: 'center center',
+          start: '20% center',
+          end: '90% bottom',
           scrub: 1,
         },
       })
       .from(whoWeAreHeading.current, {
-        y: 200,
+        y: 50,
         opacity: 0,
       })
       .from(whoWeArePara1.current, {
-        y: 200,
+        y: 50,
         opacity: 0,
       })
       .from(whoWeArePara2.current, {
-        y: 200,
+        y: 50,
         opacity: 0,
       })
       .from(whoWeArePara3.current, {
-        y: 200,
+        y: 50,
         opacity: 0,
       })
       .from(whoWeAreButton1.current, {
-        y: 100,
+        y: 50,
         opacity: 0,
       })
       .from(whoWeAreButton2.current, {
-        y: 100,
+        y: 50,
         opacity: 0,
       });
 
@@ -70,20 +73,20 @@ const AboutUs = () => {
         scrollTrigger: {
           trigger: ourMissionsBoxesWrapper.current,
           start: 'top 75%',
-          end: 'top 25%',
+          end: 'center center',
           scrub: 1,
         },
       })
       .from(ourMissionBox1.current, {
-        y: 120,
+        y: 80,
         opacity: 0,
       })
       .from(ourMissionBox2.current, {
-        y: 200,
+        y: 120,
         opacity: 0,
       })
       .from(ourMissionBox3.current, {
-        y: 250,
+        y: 160,
         opacity: 0,
       });
 
@@ -95,7 +98,6 @@ const AboutUs = () => {
           start: '25% bottom',
           end: 'center center',
           scrub: 1,
-          markers: true,
         },
       })
       .from(ourVisionImage.current, {

@@ -3,7 +3,8 @@
 }
 
 .about-us-footer-wrapper {
-  background-color: white;
+  background-color: #f5f5f7;
+  position: relative;
 }
 
 /* ABOUT US PAGE HEADER */
@@ -22,14 +23,18 @@
   position: relative;
   overflow: hidden;
   text-align: center;
-  z-index: -1;
+  z-index: 0;
   position: fixed;
 }
 
 .about-us-header > h1 {
-  font-weight: 700;
+  font-weight: 600;
   font-size: xx-large;
   margin-bottom: 20px;
+}
+
+.about-us-header > h2 {
+  font-weight: 600;
 }
 
 .about-us-header > p {
@@ -98,7 +103,7 @@
 /* WHO WE ARE */
 
 .about-us-who-we-are-wrapper {
-  height: 150vh;
+  height: 100vh;
   width: 100vw;
   text-align: center;
   display: flex;
@@ -109,6 +114,8 @@
   overflow: hidden;
   margin-top: 100vh;
   background-color: white;
+  z-index: 1;
+  position: relative;
 }
 .about-us-who-we-are-wrapper > h1 {
   font-weight: 700;
@@ -133,13 +140,20 @@
   padding: 5px;
   font-size: medium;
   border-radius: 4px;
+  width: 350px;
+  height: 80px;
 }
-.about-us-who-we-are-box h6 {
+.about-us-who-we-are-box > h6 {
+  margin: 0;
   font-weight: 700;
   font-size: large;
   background: -webkit-linear-gradient(300deg, #fa4b8b 0%, #00d1ff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.about-us-who-we-are-box > p {
+  margin: 0;
 }
 
 /* OUR MISSION */
@@ -153,6 +167,7 @@
   padding: 20px;
   overflow: hidden;
   background-color: white;
+  position: relative;
 }
 
 .about-us-our-mission-wrapper h1 {
@@ -180,6 +195,8 @@
   max-width: 280px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  text-align: center;
   flex-direction: column;
   background-color: #1f2332;
   color: #fff;
@@ -193,6 +210,7 @@
 
 .about-us-our-mission-box h6 {
   font-size: large;
+  font-weight: bold;
 }
 
 .about-us-our-mission-box p {
@@ -244,6 +262,11 @@
   background-color: transparent;
   border: none;
   z-index: 1;
+  transition: all 0.5 ease;
+}
+
+.about-us-vision-wrapper > div > button:hover {
+  text-decoration: underline;
 }
 
 .about-us-vision-wrapper > div > button > a {
@@ -285,6 +308,10 @@
   }
 
   /* who we are  */
+
+  .about-us-who-we-are-wrapper {
+    height: 150vh;
+  }
   .about-us-who-we-are-wrapper > h1 {
     font-size: 86px;
   }
@@ -337,6 +364,7 @@
     align-items: flex-start;
     padding: 20px;
     max-width: none;
+    text-align: left;
   }
   .about-us-our-mission-box img {
     height: 150px;
@@ -393,11 +421,11 @@
     font-size: 48px;
   }
   .about-us-who-we-are-box p {
-    font-size: 24px;
+    font-size: 22px;
   }
   .about-us-who-we-are-box {
     height: 160px;
-    width: 500px;
+    width: 533px;
     border-radius: 8px;
   }
   /* OUR MISSION */
@@ -424,7 +452,7 @@
     font-weight: bold;
   }
   .about-us-our-mission-box p {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 20px;
   }
   .about-us-img-bg > h1 {
