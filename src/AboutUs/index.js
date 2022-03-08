@@ -7,7 +7,7 @@ import Navbar from '../NavBar';
 import Footer from '../Footer';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { useEffect, useRef } from 'react';
+import { Fragment, useEffect, useRef } from 'react';
 
 const AboutUs = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -19,35 +19,97 @@ const AboutUs = () => {
   const whoWeAreButton1 = useRef();
   const whoWeAreButton2 = useRef();
 
+  const ourMissionsBoxesWrapper = useRef();
+  const ourMissionBox1 = useRef();
+  const ourMissionBox2 = useRef();
+  const ourMissionBox3 = useRef();
+
+  const ourVisionWrapper = useRef();
+  const ourVisionText = useRef();
+  const ourVisionImage = useRef();
+
   useEffect(() => {
+    //who we are
     gsap
       .timeline({
         scrollTrigger: {
           trigger: whoWeAreWrapper.current,
-          start: 'top 75%',
-          end: 'top top',
-          markers: true,
+          start: '25% bottom',
+          end: 'center center',
           scrub: 1,
         },
       })
       .from(whoWeAreHeading.current, {
-        y: 100,
+        y: 200,
+        opacity: 0,
       })
       .from(whoWeArePara1.current, {
         y: 200,
+        opacity: 0,
       })
       .from(whoWeArePara2.current, {
         y: 200,
+        opacity: 0,
       })
       .from(whoWeArePara3.current, {
         y: 200,
+        opacity: 0,
       })
       .from(whoWeAreButton1.current, {
-        y: 200,
+        y: 100,
+        opacity: 0,
       })
       .from(whoWeAreButton2.current, {
-        y: 200,
+        y: 100,
+        opacity: 0,
       });
+
+    //our mission
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: ourMissionsBoxesWrapper.current,
+          start: 'top 75%',
+          end: 'top 25%',
+          scrub: 1,
+        },
+      })
+      .from(ourMissionBox1.current, {
+        y: 120,
+        opacity: 0,
+      })
+      .from(ourMissionBox2.current, {
+        y: 200,
+        opacity: 0,
+      })
+      .from(ourMissionBox3.current, {
+        y: 250,
+        opacity: 0,
+      });
+
+    // our vision
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: ourVisionWrapper.current,
+          start: '25% bottom',
+          end: 'center center',
+          scrub: 1,
+          markers: true,
+        },
+      })
+      .from(ourVisionImage.current, {
+        scale: 0.8,
+        duration: 0.2,
+      })
+      .from(
+        ourVisionText.current,
+        {
+          x: '100%',
+          y: '100%',
+        },
+        '-=.2'
+      );
   }, []);
 
   return (
@@ -117,8 +179,11 @@ const AboutUs = () => {
             MOA Gaming presents a range of world-class solutions to launch your
             online iGaming business.
           </p>
-          <div className='about-us-our-mission-boxes-wrapper'>
-            <div className='about-us-our-mission-box'>
+          <div
+            ref={ourMissionsBoxesWrapper}
+            className='about-us-our-mission-boxes-wrapper'
+          >
+            <div ref={ourMissionBox1} className='about-us-our-mission-box'>
               <img src={explore} />
               <div className='about-us-our-mission-box-text-wrapper'>
                 <h6>Explore</h6>
@@ -130,7 +195,7 @@ const AboutUs = () => {
               </div>
             </div>
 
-            <div className='about-us-our-mission-box'>
+            <div ref={ourMissionBox2} className='about-us-our-mission-box'>
               <img src={improve} />
               <div className='about-us-our-mission-box-text-wrapper'>
                 <h6>Improve</h6>
@@ -143,7 +208,7 @@ const AboutUs = () => {
               </div>
             </div>
 
-            <div className='about-us-our-mission-box'>
+            <div ref={ourMissionBox3} className='about-us-our-mission-box'>
               <img src={grow} />
               <div className='about-us-our-mission-box-text-wrapper'>
                 <h6>Grow</h6>
@@ -157,8 +222,9 @@ const AboutUs = () => {
           </div>
         </div>
 
-        <div className='about-us-vision-wrapper'>
-          <div className='about-us-img-bg'>
+        <div className='about-us-vision-wrapper' ref={ourVisionWrapper}>
+          <div className='about-us-img-bg' ref={ourVisionImage} />
+          <div ref={ourVisionText}>
             <h1>Our Vision</h1>
             <p>
               iGaming industry Together With You, We Can Make a Difference in

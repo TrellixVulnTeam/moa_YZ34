@@ -98,7 +98,7 @@
 /* WHO WE ARE */
 
 .about-us-who-we-are-wrapper {
-  height: 100vh;
+  height: 150vh;
   width: 100vw;
   text-align: center;
   display: flex;
@@ -205,46 +205,52 @@
   background-color: white;
   width: 100vw;
   height: 100vh;
-}
-.about-us-img-bg {
-  width: 100%;
-  height: 100%;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(./assets/vision.png) center no-repeat;
-  background-size: cover;
-  flex-direction: column;
   color: white;
   text-align: center;
   padding: 20px;
+  flex-direction: column;
+}
+.about-us-img-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./assets/vision.png) center no-repeat;
+  background-size: cover;
   overflow: hidden;
+  z-index: 0;
 }
 
-.about-us-img-bg > h1 {
+.about-us-vision-wrapper > div > h1 {
+  z-index: 1;
   font-weight: 700;
   font-size: xx-large;
   margin-bottom: 10px;
 }
 
-.about-us-img-bg > p {
+.about-us-vision-wrapper > div > p {
   font-weight: 400;
   font-size: medium;
   text-align: center;
   margin-bottom: 20px;
+  z-index: 1;
 }
 
-.about-us-img-bg > button {
+.about-us-vision-wrapper > div > button {
   background-color: transparent;
   border: none;
+  z-index: 1;
 }
 
-.about-us-img-bg > button > a {
+.about-us-vision-wrapper > div > button > a {
   color: white;
   text-decoration: none;
 }
-.about-us-img-bg > button > a > img {
+.about-us-vision-wrapper > div > button > a > img {
   height: 10px;
   width: 10x;
   margin-left: 10px;
@@ -364,13 +370,13 @@
     height: 60%;
   }
 
-  .about-us-img-bg > h1 {
+  .about-us-vision-wrapper > div > h1 {
     font-size: 40px;
   }
-  .about-us-img-bg > p {
+  .about-us-vision-wrapper > div > p {
     font-size: 12px;
   }
-  .about-us-img-bg > button > a > span {
+  .about-us-vision-wrapper > div > button > a > span {
     font-size: 12px;
   }
 }
@@ -402,19 +408,20 @@
     font-size: 24px;
   }
   .about-us-our-mission-box img {
-    height: 200px;
+    height: 250px;
     margin-bottom: 0px;
     margin-bottom: 30px;
   }
   .about-us-our-mission-box {
-    height: 618px;
     width: 533px;
     padding: 30px;
+    height: 600px;
     justify-content: space-between;
     max-width: 30%;
   }
   .about-us-our-mission-box h6 {
     font-size: 48px;
+    font-weight: bold;
   }
   .about-us-our-mission-box p {
     font-size: 12px;
@@ -427,6 +434,19 @@
     font-size: 18px;
   }
   .about-us-img-bg > button > a > span {
+    font-size: 18px;
+  }
+
+  /* VISION */
+
+  .about-us-vision-wrapper > div > h1 {
+    font-size: 80px;
+    font-weight: bold;
+  }
+  .about-us-vision-wrapper > div > p {
+    font-size: 18px;
+  }
+  .about-us-vision-wrapper > div > button > a > span {
     font-size: 18px;
   }
 }
