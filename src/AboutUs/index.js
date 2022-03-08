@@ -7,7 +7,7 @@ import Navbar from '../NavBar';
 import Footer from '../Footer';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Fragment, useEffect, useRef } from 'react';
+import {  useEffect, useRef } from 'react';
 
 const AboutUs = () => {
   gsap.registerPlugin(ScrollTrigger);

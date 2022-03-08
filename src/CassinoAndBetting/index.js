@@ -5,8 +5,75 @@ import block1 from './assets/casino-block-1.svg';
 import block2 from './assets/casino-block-2.svg';
 import Navbar from '../NavBar';
 import Footer from '../Footer';
+import { useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const CassinoAndBetting = () => {
+  gsap.registerPlugin(ScrollTrigger);
+  const pinnedWrapper = useRef();
+  const pinnedImg = useRef();
+  const pinnedText = useRef();
+
+  const block1Wrapper = useRef();
+  const block1Img = useRef();
+
+  const block2Wrapper = useRef();
+  const block2Img = useRef();
+
+  useEffect(() => {
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: pinnedWrapper.current,
+          start: 'center center',
+          end: '150% center',
+          scrub: 1,
+          pin: true,
+        },
+      })
+      .to(pinnedImg.current, {
+        scale: 0.8,
+        borderRadius: 25,
+        duration: '.5',
+      })
+      .from(
+        pinnedText.current,
+        {
+          opacity: 0,
+        },
+        '-=.5'
+      );
+
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: block1Wrapper.current,
+          start: 'top bottom',
+          end: 'center center',
+          scrub: 1,
+          markers: true,
+        },
+      })
+      .from(block1Img.current, {
+        y: 200,
+      });
+
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: block2Wrapper.current,
+          start: 'top bottom',
+          end: 'center center',
+          scrub: 1,
+          markers: true,
+        },
+      })
+      .from(block2Img.current, {
+        y: 200,
+      });
+  }, []);
+
   return (
     <>
       <Navbar></Navbar>
@@ -38,9 +105,10 @@ const CassinoAndBetting = () => {
           </div>
         </div>
 
-        <div className='casino-img-block'>
+        <div className='casino-img-block' ref={pinnedWrapper}>
           <div className='casino-white-bg' />
-          <div className='casino-img'>
+          <div className='casino-img' ref={pinnedImg} />
+          <div className='casino-img-text' ref={pinnedText}>
             <p>
               MOA Gaming’s risk management team constantly monitors all
               multi-accounts, flow rates, and players with risky behavior. We
@@ -62,8 +130,8 @@ const CassinoAndBetting = () => {
 
         <div className='casino-block-wrapper'>
           <h3>MOA Gaming Risk Management Service Advantages </h3>
-          <div className='casino-block-inner-wrapper'>
-            <img className='casino-block-img' src={block1} />
+          <div className='casino-block-inner-wrapper' ref={block1Wrapper}>
+            <img className='casino-block-img' src={block1} ref={block1Img} />
             <div className='casino-block-text'>
               <ul>
                 <li>Real-time financial analysis </li>
@@ -91,7 +159,7 @@ const CassinoAndBetting = () => {
 
         <div className='casino-block-wrapper'>
           <h3>Sports Betting Fraud Prevention </h3>
-          <div className='casino-block-inner-wrapper'>
+          <div className='casino-block-inner-wrapper' ref={block2Wrapper}>
             <div className='casino-block-text'>
               <p>
                 MOA Gaming Risk Management Services are put together for sports
@@ -104,8 +172,8 @@ const CassinoAndBetting = () => {
                 all the bets on all markets in real time to ensure the most
                 secure and risk-free player base.
               </p>
-            </div>{' '}
-            <img className='casino-block-img' src={block2} />
+            </div>
+            <img className='casino-block-img' src={block2} ref={block2Img} />
           </div>
         </div>
       </div>
