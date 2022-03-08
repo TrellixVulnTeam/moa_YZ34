@@ -166,7 +166,7 @@
 
 @media only screen and (min-width: 600px) {
   .casino-header-wrapper {
-    height: 50vh;
+    height: 70vh;
     width: 100vw;
   }
   .casino-header-wrapper h1 {
@@ -209,7 +209,7 @@
 
   /* IMAGE SECTION */
   .casino-img-block {
-    height: 50vh;
+    height: 100vh;
     background-color: #e6e6ef;
     display: flex;
     justify-content: center;
@@ -243,11 +243,13 @@
   /* BLOCKS */
   .casino-block-wrapper {
     display: flex;
-    margin: 200px 0;
+    margin: 200px auto;
     justify-content: center;
     align-items: center;
     text-align: center;
     flex-direction: column;
+    max-width: 1500px;
+    justify-self: center;
   }
   .casino-block-wrapper h3 {
     font-size: 60px;

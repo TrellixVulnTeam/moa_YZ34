@@ -1,12 +1,15 @@
-import './style.css'
+import './style.css';
 import right from './assets/right.svg';
 import playIcon from './assets/play-icon.svg';
 import block1 from './assets/casino-block-1.svg';
 import block2 from './assets/casino-block-2.svg';
+import Navbar from '../NavBar';
+import Footer from '../Footer';
 
 const CassinoAndBetting = () => {
   return (
     <>
+      <Navbar></Navbar>
       <div className='casino-and-betting-wrapper'>
         <div className='casino-header-wrapper'>
           <h1>Casino & Betting</h1>
@@ -36,7 +39,7 @@ const CassinoAndBetting = () => {
         </div>
 
         <div className='casino-img-block'>
-            <div className='casino-white-bg' />
+          <div className='casino-white-bg' />
           <div className='casino-img'>
             <p>
               MOA Gaming’s risk management team constantly monitors all
@@ -106,6 +109,7 @@ const CassinoAndBetting = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };
