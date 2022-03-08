@@ -127,6 +127,7 @@
   z-index: 2;
   text-align: center;
   color: white;
+  opacity: 1;
 }
 
 .casino-img-text > p {
@@ -245,6 +246,7 @@
     z-index: 2;
     text-align: center;
     color: white;
+    opacity: 1;
   }
   .casino-img-text > p {
     font-size: 18px;
