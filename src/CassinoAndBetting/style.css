@@ -50,6 +50,8 @@
   -o-transition: all 1s ease;
   transition: all 1s ease;
   margin-bottom: 20px;
+  width: 180px;
+  height: 40px;
 }
 
 .casino-header-contact-btn > a {
@@ -58,6 +60,7 @@
   align-items: center;
   text-decoration: none;
   color: white;
+  font-size: 12px;
 }
 .casino-header-contact-btn:hover {
   background: linear-gradient(
@@ -82,8 +85,8 @@
 }
 
 .casino-header-contact-btn > a > img {
-  height: 5px;
-  width: 5x;
+  height: 8px;
+  width: 8px;
   margin-left: 10px;
   transition: all 0.6s ease;
 }
@@ -92,6 +95,10 @@
   border: none;
   background-color: transparent;
 }
+.casino-header-video-btn:hover {
+  text-decoration: underline;
+}
+
 .casino-header-video-btn > a {
   display: flex;
   justify-content: center;
@@ -107,6 +114,12 @@
 
 /* IMAGE SECTION */
 .casino-img-block {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-self: center;
+  align-items: center;
 }
 
 .casino-img {
@@ -118,16 +131,17 @@
   position: absolute;
   top: 0;
   left: 0;
+  z-index: -1;
 }
 
 .casino-img-text {
-  width: 80%;
+  width: 100%;
   max-width: 1000px;
   font-size: 18px;
   z-index: 2;
   text-align: center;
   color: white;
-  opacity: 1;
+  padding: 20px
 }
 
 .casino-img-text > p {
@@ -144,6 +158,8 @@
 .casino-block-wrapper h3 {
   font-size: larger;
   text-align: center;
+  font-weight: bold;
+  padding: 0 20px;
 }
 
 .casino-block-inner-wrapper {
@@ -174,12 +190,12 @@
     width: 100vw;
   }
   .casino-header-wrapper h1 {
-    font-size: 82px;
-    line-height: 80px;
+    font-size: 62px;
+    line-height: 60px;
   }
   .casino-header-wrapper h6 {
-    font-size: 38px;
-    line-height: 80px;
+    font-size: 28px;
+    line-height: 20px;
   }
   .casino-header-wrapper p {
     font-size: 15px;
@@ -246,7 +262,7 @@
     z-index: 2;
     text-align: center;
     color: white;
-    opacity: 1;
+    opacity: 0;
   }
   .casino-img-text > p {
     font-size: 18px;
@@ -289,7 +305,7 @@
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1400px) {
   .casino-header-wrapper h1 {
     font-size: 100px;
     line-height: 100px;

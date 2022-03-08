@@ -22,54 +22,56 @@ const CassinoAndBetting = () => {
   const block2Img = useRef();
 
   useEffect(() => {
-    gsap
-      .timeline({
-        scrollTrigger: {
-          trigger: pinnedWrapper.current,
-          start: 'center center',
-          end: '150% center',
-          scrub: 1,
-          pin: true,
-        },
-      })
-      .to(pinnedImg.current, {
-        scale: 0.8,
-        borderRadius: 25,
-        duration: '.5',
-      })
-      .from(
-        pinnedText.current,
-        {
-          opacity: 0,
-        },
-        '-=.5'
-      );
+    if (window.innerWidth >= 600) {
+      gsap
+        .timeline({
+          scrollTrigger: {
+            trigger: pinnedWrapper.current,
+            start: 'center center',
+            end: '150% center',
+            scrub: 1,
+            pin: true,
+          },
+        })
+        .to(pinnedImg.current, {
+          scale: 0.8,
+          borderRadius: 25,
+          duration: '.5',
+        })
+        .to(
+          pinnedText.current,
+          {
+            opacity: 1,
+          },
+          '-=.5'
+        );
 
-    gsap
-      .timeline({
-        scrollTrigger: {
-          trigger: block1Wrapper.current,
-          start: 'top bottom',
-          end: 'center center',
-          scrub: 1,
-        },
-      })
-      .from(block1Img.current, {
-        y: 200,
-      });
+      gsap
+        .timeline({
+          scrollTrigger: {
+            trigger: block1Wrapper.current,
+            start: 'top bottom',
+            end: 'center center',
+            scrub: 1,
+          },
+        })
+        .from(block1Img.current, {
+          y: 200,
+        });
 
-    gsap
-      .timeline({
-        scrollTrigger: {
-          trigger: block2Wrapper.current,
-          start: 'top bottom',
-          end: 'center center',
-          scrub: 1,
-        },
-      })
-      .from(block2Img.current, {
-        y: 200,
-      });
+      gsap
+        .timeline({
+          scrollTrigger: {
+            trigger: block2Wrapper.current,
+            start: 'top bottom',
+            end: 'center center',
+            scrub: 1,
+          },
+        })
+        .from(block2Img.current, {
+          y: 200,
+        });
+    }
   }, []);
 
   return (
