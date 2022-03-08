@@ -53,7 +53,7 @@ const Events = () => {
 
   return (
     <>
-      <NavBar></NavBar>
+      <NavBar />
       <div className='events-container'>
         <div className='events-header-container' ref={headerRef}>
           <h1>Events</h1>
@@ -75,7 +75,9 @@ const Events = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      <div className='events-footer-container'>
+        <Footer />
+      </div>
     </>
   );
 };
