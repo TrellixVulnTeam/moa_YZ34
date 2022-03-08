@@ -106,7 +106,6 @@ const AboutUs = () => {
         ourVisionText.current,
         {
           x: '100%',
-          y: '100%',
         },
         '-=.2'
       );
