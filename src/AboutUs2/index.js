@@ -37,7 +37,7 @@ const AboutUs = () => {
         },
         scrollTrigger: {
           trigger: whoWeAreWrapper.current,
-          start: '20% center',
+          start: '10% center',
           end: '90% bottom',
           scrub: 1,
         },
@@ -73,7 +73,7 @@ const AboutUs = () => {
         scrollTrigger: {
           trigger: ourMissionsBoxesWrapper.current,
           start: 'top 75%',
-          end: 'center center',
+          end: '25% center',
           scrub: 1,
         },
       })
@@ -224,18 +224,19 @@ const AboutUs = () => {
         </div>
 
         <div className='about-us-vision-wrapper' ref={ourVisionWrapper}>
-          <div className='about-us-img-bg' ref={ourVisionImage} />
+          <div className='about-us-img-bg' ref={ourVisionImage}>
+            <button>
+              <a href='/'>
+                Contact us <img src={rightArrow} />
+              </a>
+            </button>
+          </div>
           <div ref={ourVisionText}>
             <h1>Our Vision</h1>
             <p>
               iGaming industry Together With You, We Can Make a Difference in
               the.
             </p>
-            <button>
-              <a href='/'>
-                Contact us <img src={rightArrow} />
-              </a>
-            </button>
           </div>
         </div>
       </div>
