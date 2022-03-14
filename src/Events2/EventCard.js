@@ -14,7 +14,6 @@ const EventCard = ({ event }) => {
           <a>
             <span>Book A Meeting</span>
             <img src={rightArrow} className='event-card-btn-icon' />
-            <img />
           </a>
         </button>
       </div>

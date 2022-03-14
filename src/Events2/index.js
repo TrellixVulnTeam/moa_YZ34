@@ -56,7 +56,7 @@ const Events = () => {
       <NavBar />
       <div className='events-container'>
         <div className='events-header-container' ref={headerRef}>
-          <h1>Events</h1>
+          <h1>EVENTS</h1>
           <h6>
             Meet the MOA team at the most anticipated iGaming events all around
             the world. Interested? Check out the list of our upcoming events to
