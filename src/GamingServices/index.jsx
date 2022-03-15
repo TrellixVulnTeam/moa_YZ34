@@ -12,8 +12,9 @@ import right from './assets/right.svg';
 
 export default function GamingServices() {
     return (
-        <>
+        <>     <div className='gs-wrapper'>
             <NavBar />
+
             <div className='gs-header-wrapper'>
                 <h1>MOA Gaming Services:</h1>
                 <h6>We Strive to Empower</h6>
@@ -140,73 +141,36 @@ export default function GamingServices() {
                 <div className='gs-section-img'>
                     <img src={Risk} />
                 </div>
-
             </div>
+            <div className='gs-section-wrapper-last gs-section-grey'>
+                <div className='gs-section-wrapper-last-row'>
+                    <img src={Trophy} className='gs-trophy-img' />
+                    <h2>Sports Sponsorship</h2>
 
+                    <div>
+                        <h6>
+                            Your Brand Name Going Viral
+                        </h6>
+                        <p>Get access to the most famous sports brands and let your brand name appear on the world’s most renowned platforms. With MOA Gaming, you can advertise your products during the best football pitches.</p>
+                    </div>
+                </div>
+                <div className='gs-section-wrapper-last-btn-row'>
+                </div>
+                <button className='casino-header-contact-btn'>
+                    <a href='/casino-and-betting'>
+                        <span>Read More</span>
+                        <img src={right} />
+                    </a>
+                </button>
+            </div>
+            <div className='gbs-why-choose-wrapper cs-why-choose-wrapper'>
+                <div>
+                    <h2>Why Choose Moa</h2>
+                    <p>We provide an iGaming software that’s designed by people who focus on sustainability and growth. Striving to skyrocket your revenue streams, we get you noticed in the industry through our innovative products and solutions. Among many other casino software providers, our professionals are ready to deliver premium quality services. Always looking at the big picture, we created software that is easy to set up with services meant for all types of businesses.  Contact us, and we’ll reach out to you for anything your business needs. MOA Gaming - your reliable partner in the iGaming market. We’ve got you covered!</p>
+                </div>   
+                </div>
 
-
-
-
-
-
-
-            <Row>
-                <div
-                    head="Risk Management Services "
-                    subhead="Your Protection in our Hands"
-                    text="MOA Gaming’s professional risk management system is designed to carefully calculate all the odds and markets, and safeguard your margin. We offer only professionalism in sports betting fraud management and financial loss prevention at every stage of your players’ journey."
-                    img={Risk}
-                    btnTitle="Read More"
-                    link=""
-                />
-                <Row className="justify-content-center bg-grey m-0">
-                    <Col
-                        md={10}
-                        className="bg-grey"
-                        style={{
-                            background: `url(${Trophy}) top center`,
-                            backgroundSize: "80%",
-                            backgroundRepeat: "no-repeat",
-                        }}
-                    >
-                        <Row
-                            className="justify-content-center"
-                            style={{ marginTop: "25%" }}
-                        >
-                            <Col md={4}>
-                                <h2 className="fw-bold ms-sm-5">
-                                    Sports <br /> Sponsorship
-                                </h2>
-                            </Col>
-                            <Col md={2}></Col>
-                            <Col md={4}>
-                                <div className="ms-sm-5">
-                                    <h4 className="fs-6 fw-bold">
-                                        Your Brand Name Going Viral
-                                    </h4>
-                                    <p>
-                                        Get access to the most famous sports brands
-                                        and let your brand name appear on the
-                                        world’s most renowned platforms. With MOA
-                                        Gaming,
-                                    </p>
-                                </div>
-                            </Col>
-                        </Row>
-                        <div className="text-center mb-5">
-                            <button text="Read More" variant="dark" href="./gaming-sports" className="px-5 mt-5" iconClass="bi bi-chevron-right ps-2" />
-                        </div>
-                    </Col>
-                </Row>
-                <section>
-                    <Container>
-                        <div className="section-title">
-                            <div className="border-radius" justify="center" />
-                        </div>
-                    </Container>
-                </section>
-                <Footer />
-            </Row>
+            <Footer /></div>
         </>
     );
 }
