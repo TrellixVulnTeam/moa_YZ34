@@ -16,9 +16,11 @@ const CassinoAndBetting = () => {
   const pinnedText = useRef();
 
   const block1Wrapper = useRef();
+  const block1Text = useRef();
   const block1Img = useRef();
 
   const block2Wrapper = useRef();
+  const block2Text = useRef();
   const block2Img = useRef();
 
   useEffect(() => {
@@ -55,9 +57,17 @@ const CassinoAndBetting = () => {
             scrub: 1,
           },
         })
-        .from(block1Img.current, {
-          y: 200,
-        });
+        .from(block1Text.current, {
+          y: 100,
+          duration: 0.2,
+        })
+        .from(
+          block1Img.current,
+          {
+            y: 200,
+          },
+          '-=.2'
+        );
 
       gsap
         .timeline({
@@ -68,9 +78,17 @@ const CassinoAndBetting = () => {
             scrub: 1,
           },
         })
-        .from(block2Img.current, {
-          y: 200,
-        });
+        .from(block2Text.current, {
+          y: 100,
+          duration: 0.2,
+        })
+        .from(
+          block2Img.current,
+          {
+            y: 150,
+          },
+          '-=.2'
+        );
     }
   }, []);
 
@@ -91,7 +109,7 @@ const CassinoAndBetting = () => {
           </p>
           <div className='casino-header-buttons-container'>
             <button className='casino-header-contact-btn'>
-              <a href='/'>
+              <a href='/contact-us'>
                 <span>Contact Us</span>
                 <img src={right} />
               </a>
@@ -132,7 +150,7 @@ const CassinoAndBetting = () => {
           <h3>MOA Gaming Risk Management Service Advantages </h3>
           <div className='casino-block-inner-wrapper' ref={block1Wrapper}>
             <img className='casino-block-img' src={block1} ref={block1Img} />
-            <div className='casino-block-text'>
+            <div className='casino-block-text' ref={block1Text}>
               <ul>
                 <li>Real-time financial analysis </li>
                 <li>Real-time Live Casino & Sports</li>
@@ -160,7 +178,7 @@ const CassinoAndBetting = () => {
         <div className='casino-block-wrapper'>
           <h3>Sports Betting Fraud Prevention </h3>
           <div className='casino-block-inner-wrapper' ref={block2Wrapper}>
-            <div className='casino-block-text'>
+            <div className='casino-block-text' ref={block2Text}>
               <p>
                 MOA Gaming Risk Management Services are put together for sports
                 betting fraud management and financial loss prevention. It
