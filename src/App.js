@@ -5,6 +5,7 @@ import CassinoAndBetting from './CassinoAndBetting2';
 import SiteMap from './SiteMap/SiteMap';
 import GlobalBankingSolution from './GlobalBankingSolution';
 import NotificationApp from './NotificationApp';
+import GamingServices from './GamingServices';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path='/site-map' element={<SiteMap />} />
           <Route path='/banking' element={<GlobalBankingSolution />} />
           <Route path='/notif' element={<NotificationApp />} />
+          <Route path='gaming-services' element={<GamingServices />} />
           <Route path='/' />
         </Routes>
       </Router>
