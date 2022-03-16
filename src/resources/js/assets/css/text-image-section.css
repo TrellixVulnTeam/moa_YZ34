@@ -1,0 +1,77 @@
+.r-height {
+    height: calc(70vh + 353px);
+}
+.text-image-section {
+}
+.text-image-section h2 {
+    font-size: 8vmin !important;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.1em;
+}
+.text-image-section .p-c {
+    padding-right: 5rem !important;
+    padding-left: 7rem !important;
+}
+.text-image-section .imgbg {
+    width: 75%;
+    border-radius: 8px;
+    margin-left: 13%;
+}
+@media (max-width: 576px) {
+    .text-image-section .imgbg {
+        width: 70%;
+        height: 39vh;
+        border-radius: 8px;
+    }
+}
+@media (max-width: 413px) {
+    .r-height {
+        height: 100vh;
+    }
+    .text-image-section {
+        margin-top: 10% !important;
+    }
+    .text-image-section .p-c {
+        padding-right: 3rem !important;
+        padding-left: 3rem !important;
+    }
+    .p-10{
+        padding-right: 3rem !important;
+        padding-left: 3rem !important;
+    }
+}
+
+.text-image-section img {
+    float: right;
+}
+.gear2 {
+    margin-left: -13%;
+}
+
+.laptop {
+    margin-left: -14%;
+}
+.gear {
+}
+.gear{
+    margin-left: -13%;
+}
+.retail {
+    max-width: calc(100% + 63px) !important;
+}
+.text-prple, .text-prple:hover{
+    color: #514497; 
+}
+.m-l-2{
+    margin-left: -2%;
+}
+.m-laptop{
+    height: 83vh;
+}
+.m-gear2{
+    height: 83vh;
+}
+.m-retail{
+    height: 83vh;
+}

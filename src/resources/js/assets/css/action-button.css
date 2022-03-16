@@ -1,0 +1,15 @@
+.lg-effect:hover{
+    background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+    background-position: right center;
+}
+.animate-btn{
+    transform: translateY(-50%);
+    transition: all .2s;
+}
+.animate-btn:hover {
+    right: 5px;
+}
+.btn-black{
+    background-color: black !important;
+    border-color: black !important;
+}

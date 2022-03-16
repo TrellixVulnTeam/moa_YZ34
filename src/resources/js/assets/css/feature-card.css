@@ -1,0 +1,56 @@
+.feature-card {
+    background-color: transparent;
+    padding-left: 2rem;
+}
+.feature-card > div{
+    line-height: 3.7vmin;
+    border: 0px !important;
+}
+.feature-card-container h2 {
+    font-size: calc(1rem + 2vw) !important;
+    font-weight: 600;
+    font-style: normal;
+}
+.feature-card .list-group-item {
+    background-color: transparent;
+    color: #fff;
+}
+.feature-card .pink-item::before {
+    content: url('data:image/svg+xml; utf8, <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.3333 1L5.16667 10.1667L1 6" stroke="%23CC74BB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+    color: #cc74bb;
+    padding-right: 10px;
+}
+.feature-card .white-item::before {
+    content: url('data:image/svg+xml; utf8, <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.3333 1L5.16667 10.1667L1 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+    color: #fff;
+    padding-right: 5px;
+}
+.feature-card .blue-item::before {
+    content: url('data:image/svg+xml; utf8, <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.3333 1L5.16667 10.1667L1 6" stroke="%236464DD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+    padding-right: 10px;
+}
+.rounded-6 {
+    border-radius: 0.6rem !important;
+}
+.feature-card-container li {
+    margin: 10px 0;
+}
+.bg-oned {
+    background-color: #1d1d1f;
+}
+.bgdark {
+    background-color: #000 !important;
+    border-radius: 7px;
+}
+.pt-2r{
+    padding-top: 2rem;
+}
+.p-6 {
+    padding: 5rem;
+    line-height: 40px;
+}
+@media (max-width: 576px) {
+.feature-card > div{
+    line-height: 5.7vmin;
+}
+}

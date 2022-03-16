@@ -1,0 +1,229 @@
+#agent-affilate-platform {
+    background: linear-gradient(180deg, #1f2332 0%, #1f2332 32.11%);
+}
+#agent-affilate-platform h2 {
+    color: rgba(255, 255, 255, 1);
+    margin: 15px 0 0 0;
+    font-size: 15vmin;
+    font-weight: 700;
+    padding-top: 75px;
+}
+#agent-affilate-platform p,
+#agent-affilate-platform h6 {
+    color: rgba(255, 255, 255, 1);
+}
+#agent-affilate-platform .card {
+    background-color: #151521;
+    border-radius: 20px;
+}
+#agent-affilate-platform .card h3 {
+    font-weight: bold;
+}
+#agent-affilate-platform .card p {
+    text-align: center;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 12px;
+}
+
+#stock-page p {
+    color: #fff;
+}
+#our-partners {
+    padding: 60px 0;
+}
+#online-gaming-license {
+    padding: 60px 0;
+}
+.editor-img {
+    width: 80%;
+}
+#sports-batting-software {
+    padding: 60px 0;
+}
+.section-title h2 {
+    font-size: 12vmin;
+    color: #1f2332;
+    font-weight: bold;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    position: relative;
+}
+.section-title {
+    text-align: center;
+}
+#stock-page {
+    width: 100%;
+    height: 100vh;
+    background: url(./../../assets/img/stock-photo.png) top center;
+    background-size: cover;
+    position: relative;
+}
+#stock-page h1 {
+    margin: 0;
+    font-size: 84px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff;
+}
+#stock-page h2 {
+    color: #eee;
+    margin: 15px 0 0 0;
+    font-size: 15vmin;
+    font-weight: 700;
+}
+#sportsbook h2 {
+    font-size: 8vmin !important;
+    font-weight: 700;
+}
+#game-suite h2 {
+    font-size: 9vmin !important;
+    font-weight: 700;
+}
+#sports-batting-software h2 {
+    margin: 15px 0 0 0;
+    /* font-size: calc(3rem + 4.5vw) !important; */
+    font-size: 17vmin !important;
+    font-weight: 800;
+}
+#stock-page .container {
+    text-align: center;
+    padding-top: 50px;
+}
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+.liener-gredient-product {
+    background-image: linear-gradient(
+        to left,
+        #fa4ba7 37%,
+        #00d1ff 70%
+    ) !important;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900 !important;
+    font-size: calc(1.775rem + 0.3vw);
+}
+.mx-100 {
+    max-width: 100%;
+}
+.mx-80 {
+    max-width: 80%;
+}
+.mx-72 {
+    max-width: 72%;
+}
+.mx-75 {
+    max-width: 75%;
+}
+.mx-60 {
+    max-width: 62%;
+}
+.bg-dark {
+    background-color: #000000 !important;
+}
+.fs-7 {
+    font-size: 12px;
+}
+.m-30 {
+    margin-top: 25%;
+}
+.m-32 {
+    margin-top: 32%;
+}
+.m-13 {
+    margin-top: 13%;
+}
+.m-36 {
+    margin-top: 30%;
+}
+.m-46 {
+    margin-top: 30%;
+}
+.r-border-bg {
+    border-right: 15px solid #1f2332;
+}
+.l-border-bg {
+    border-left: 15px solid #1f2332;
+}
+.w-30 {
+    width: 30%;
+}
+.w-60 {
+    width: 60%;
+}
+.m-10 {
+    margin-top: 6%;
+}
+.rgb-white {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+.product-card-img {
+    height: 37vh;
+}
+.product-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    border: 10px solid #000000;
+}
+
+.notification-app-section-img {
+    width: 80%;
+}
+
+.border-radius {
+    border-radius: 8px !important;
+}
+
+@media (max-width: 480px) {
+    .product-card-img {
+        height: 15vh !important;
+    }
+}
+p {
+    font-size: 2.125vmin !important;
+}
+
+.p-l-r {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+}
+
+#game-suite {
+    margin-top: 3.5rem !important;
+}
+#game-suite p {
+    padding-bottom: 3rem !important;
+}
+.p-b-5 {
+    padding-bottom: 10rem !important;
+}
+.q-game {
+    min-height: 80vh;
+}
+#sports-batting-software {
+    margin-top: 4rem;
+}
+.p-b-13 {
+    padding-bottom: 13rem !important;
+}
+.section-title p {
+    font-size: 1.8vmin !important;
+}
+.pt-7 {
+    padding-top: 5rem;
+}
+.pb-11 {
+    padding-bottom: 11rem;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .product-card-img {
+        height: 11vmin;
+    }
+}
+
+.p-t-card {
+    padding-top: 10px;
+}

@@ -1,0 +1,34 @@
+
+.holder-img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.holder-img img{
+    transition: transform .5s ease-in-out;
+}
+.holder-img img:hover{
+    transform: scale(2) rotate(25deg);
+}
+.card-footer{
+    background: white;
+}
+.footer-reading span{
+    color: #767B91;
+}
+.holder-img h2{
+    font-weight: 800;
+    font-size: calc(2.5rem + .9vw)!important;
+    text-transform: uppercase;
+}
+.blog-title{
+    font-family: Thicker !important;
+}
+@font-face {
+    font-family: "Thicker";
+    src: local("Thicker"),
+     url("./../fonts/Thicker-BoldItalic.otf") format("truetype");
+    font-weight: bold;
+}

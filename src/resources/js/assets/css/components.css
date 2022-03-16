@@ -1,0 +1,20 @@
+.components h3{
+    top:146px;
+    font-size: calc(0.57rem + .9vw)!important;
+    font-weight: 700;
+}
+@media (max-width: 576px){
+    .text-xs-center {
+        text-align: center!important;
+    }
+}
+.p-10{
+    padding-left: 12rem;
+    padding-right: 12rem;
+}
+
+.api-components h3{
+    top:146px;
+    font-size: 2.8vmin !important;
+    font-weight: 700;
+}

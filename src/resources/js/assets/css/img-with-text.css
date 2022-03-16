@@ -1,0 +1,14 @@
+.img-with-text h2{
+    font-weight: bold;
+    font-size: calc(3rem + .9vw)!important;
+   }
+.img-with-text h4{
+    font-weight: bold;
+    font-size: 22px;    
+}
+.bg-grey{
+    background-color: #F5F5F7;
+}
+.bg-black{
+    background-color: #000;   
+}

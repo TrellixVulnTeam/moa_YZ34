@@ -1,0 +1,56 @@
+.features{
+    background: url(./../../assets/img/features.png) top center;
+}
+.features h1{
+    color: rgba(255, 255, 255, 1);
+    font-size: 12vmin !important;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.2em;   
+}
+.features p{
+    color: rgba(255, 255, 255, 1);
+}
+.top-hr-main{
+    border-top: 1px solid;
+    border-image: 
+    linear-gradient(
+      to right, 
+      #FFFFFF, 
+      rgba(255, 255, 255, 0)
+    ) 1%;
+}
+.features h3{
+    color: rgba(255, 255, 255, 1);
+    font-size: calc(1.7rem + .9vw)!important;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.2em;
+}
+.features figcaption{
+    color: rgba(255, 255, 255, 0.6);
+}
+.right-hr{
+    border-right: 1px solid rgba(255, 255, 255, 1);
+}
+.top-hr-g{
+    border-top: 1px solid;
+    border-image: 
+    linear-gradient(
+      to left, 
+      #FFFFFF, 
+      rgba(255, 255, 255, 0)
+    ) 1%;
+}
+.top-hr{
+    border-top: 1px solid rgba(255, 255, 255, 1);
+}
+.top-hr-right-g{
+  border-top: 1px solid;
+  border-image: 
+    linear-gradient(
+      to right, 
+      #FFFFFF, 
+      rgba(255, 255, 255, 0)
+    ) 1%;
+}

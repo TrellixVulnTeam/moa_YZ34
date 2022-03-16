@@ -1,0 +1,79 @@
+.card-turkey h3 {
+    font-weight: 700;
+    letter-spacing: 0em;
+    font-size: calc(3rem + 0.9vw);
+    font-style: normal;
+    line-height: 1.2em;
+}
+.bg-grey {
+    background: rgba(245, 245, 247, 0.6);
+}
+.card-turkey h6 {
+    font-weight: 600;
+    letter-spacing: 0em;
+    font-size: 1.4rem;
+}
+.rel-card {
+    position: relative;
+    margin-top: -24%;
+    background: rgba(245, 245, 247, 0.6);
+    backdrop-filter: blur(40px);
+}
+.fs-res {
+    font-size: calc(1.6rem + 2.4vw) !important;
+    font-weight: 700;
+    margin-left: 10px;
+}
+.p-t-9 {
+    padding-top: 9rem;
+}
+.m-t-9 {
+    margin-top: 9rem;
+}
+.m-t-12 {
+    margin-top: 12rem;
+}
+
+@media only screen and (min-width: 769px) {
+    .c1 {
+        border-right: 7px solid;
+    }
+    .c2 {
+        border-left: 7px solid;
+    }
+    .c1 img,
+    .c2 img {
+        margin-right: 3rem;
+    }
+}
+
+.c1 img,
+.c2 img {
+    max-width: 15%;
+    height: 10%;
+}
+.c1 div,
+.c2 div {
+    align-items: center;
+}
+.c1 h6,
+.c2 h6 {
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+}
+.c1 p,
+.c2 p {
+    padding-bottom: 2rem;
+}
+.feature-world-class{
+    background: linear-gradient(180deg, #F5F5F7 50%, #ffffff 50%);
+}
+.font-12vmin{
+    font-size: 12vmin !important;
+}
+.font-48px{
+    font-size: 4.8vmin !important;
+}
+.retail-img-pos{
+    margin-left: -28%;
+}

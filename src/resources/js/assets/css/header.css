@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+.gs {
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    background-repeat: round !important;
+}
+.gs h2 {
+    color: #fff;
+    font-size: 7vmin;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.2em;
+    /* text-transform: uppercase; */
+}
+.gs h4 {
+    font-size: 4vmin;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.2em;
+}
+.gs h1 {
+    color: #fff;
+    font-size: calc(3.4em + 1vw);
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.2em;
+}
+.gs p {
+    color: #fff;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 30px;
+    font-size: 18px !important;
+}
+.gs .container {
+    text-align: center;
+    padding-top: 50px;
+}
+.h2-lg-head {
+    font-size: calc(3rem + 7vw) !important;
+    line-height: 1em !important;
+}
+.h2-md-head {
+    font-size: calc(2rem + 4vw) !important;
+    line-height: 1em !important;
+}
+.h2-lg-head,
+.h2-md-head {
+    margin-top: 2rem;
+}
+@media (max-width: 576px) {
+    .h2-lg-head {
+        margin-top: 35% !important;
+    }
+}
+@media (min-width: 576px) {
+    .w-md-68 {
+        width: 68% !important;
+    }
+    .w-md-52 {
+        width: 52% !important;
+    }
+    .w-md-58 {
+        width: 58% !important;
+    }
+    .w-md-75 {
+        width: 75% !important;
+    }
+}
+.mt-12 {
+    margin-top: 13rem;
+}
+.m-t-5 {
+    margin-top: 5rem;
+}
+.m-t-4 {
+    margin-top: 4rem;
+}
+.fs-4-8 {
+    font-size: 4.8vmin !important;
+}
+.f-6-4 {
+    font-size: 6.4vmin;
+}
+.fs-86 {
+    font-size: 8.6vmin !important;
+}
+.h2-lg-head-custom {
+    font-size: calc(3rem + 6vw) !important;
+    line-height: 1em !important;
+}

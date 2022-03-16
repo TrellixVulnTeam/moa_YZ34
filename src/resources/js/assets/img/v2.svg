@@ -1,0 +1,11 @@
+<svg width="79" height="81" viewBox="0 0 79 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g style="mix-blend-mode:overlay">
+<circle cx="16.5" cy="16.5" r="14.5" stroke="white" stroke-opacity="0.7" stroke-width="4"/>
+<circle cx="16.5" cy="16.5" r="8.5" stroke="white" stroke-opacity="0.7" stroke-width="2"/>
+<circle cx="20.5" cy="60.5" r="18.5" stroke="white" stroke-opacity="0.7" stroke-width="4"/>
+<circle cx="20.5" cy="60.5" r="11.5" stroke="white" stroke-opacity="0.7" stroke-width="2"/>
+<circle cx="68.5" cy="35.5" r="8.5" stroke="white" stroke-opacity="0.7" stroke-width="4"/>
+<path d="M24.5 4.5L70 27" stroke="white" stroke-opacity="0.7" stroke-width="4"/>
+<path d="M32 75L74 42M2 61V16.5" stroke="white" stroke-opacity="0.7" stroke-width="4"/>
+</g>
+</svg>

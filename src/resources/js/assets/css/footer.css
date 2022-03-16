@@ -1,0 +1,15 @@
+#formkickoff input[type="text"],#formkickoff input[type="email"],#formkickoff input[type="number"],#formkickoff textarea{
+    background-color: #ffffff !important;
+}
+#formkickoff .form-control::-webkit-input-placeholder {
+    color: #2A324B;
+}
+#formkickoff h3{
+    color: #1F2332;
+    font-style: normal;
+    font-weight: bold;
+}
+.footer-link, .footer-link:hover {
+    color: inherit;
+    text-decoration: inherit;
+}

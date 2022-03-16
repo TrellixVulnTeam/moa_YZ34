@@ -1,0 +1,162 @@
+.ps-wrapper {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.ps-header-wrapper {
+  background: url('../../assets/img/pickawood.png') no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+}
+
+.ps-mobile-section-wrapper {
+  align-items: flex-end;
+  justify-content: center;
+  height: 200vh;
+}
+.ps-mobile-section-text-wrapper {
+  width: 45%;
+}
+
+.ps-mobile-hand-contaner {
+  left: 0;
+  transform: translate(-5%, 0);
+  height: 200vh;
+  z-index: 0;
+}
+
+.ps-payment-solutions {
+  position: relative;
+  z-index: 2;
+  height: 100vh;
+  background-color: #000000;
+  color: white;
+  padding: 40px 80px;
+  width: 1650px;
+  max-width: 90vw;
+  margin: 50px auto;
+  margin-top: -300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 8px;
+}
+
+.ps-payment-solutions-header {
+  flex: 0.25;
+  text-align: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.ps-payment-solutions-header > h2 {
+  font-size: 48px !important;
+  line-height: 61px !important;
+  font-weight: 700;
+}
+
+.ps-payment-solutions-header > p {
+  font-size: 18px !important;
+  line-height: 30px !important;
+}
+
+.ps-payment-solutions-images {
+  flex: 0.75;
+  display: flex;
+  width: 100%;
+}
+.ps-payment-solutions-card {
+  background-color: #1f2332;
+  width: 50%;
+  margin: 10px 10px;
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.ps-payment-solutions-card > img {
+  width: 50%;
+  margin-bottom: 20px;
+}
+.ps-payment-solutions-card > h2 {
+  font-size: 48px !important;
+  line-height: 72px !important;
+  font-weight: 700;
+}
+.ps-payment-solutions-card > p {
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  line-height: 32px !important;
+}
+
+@media (max-width: 1400px) {
+  .ps-payment-solutions-header > h2 {
+    font-size: 38.4px !important;
+    line-height: 48.8px !important;
+  }
+  .ps-payment-solutions-header > p {
+    font-size: 14.4px !important;
+    line-height: 24px !important;
+  }
+  .ps-payment-solutions-card {
+    padding: 10px 20px !important;
+  }
+  .ps-payment-solutions-card > h2 {
+    font-size: 38.4px !important;
+    line-height: 57.6px !important;
+  }
+  .ps-payment-solutions-card > p {
+    font-size: 14.4px !important;
+    font-weight: 400 !important;
+    line-height: 25.6px !important;
+  }
+}
+@media (max-width: 600px) {
+  .ps-mobile-hand-contaner {
+    height: 55vh;
+    top: 70vh;
+  }
+  .ps-mobile-section-wrapper {
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+  }
+  .ps-mobile-section-text-wrapper {
+    width: 100%;
+  }
+  .ps-payment-solutions-header > h2,
+  .ps-payment-solutions-header > h2 {
+    font-size: xx-large !important;
+    line-height: 1.5 !important;
+  }
+  .ps-payment-solutions-header > p,
+  .ps-payment-solutions-header > p {
+    font-size: medium !important;
+    line-height: 1.5 !important;
+  }
+  .ps-payment-solutions {
+    margin: 0 auto;
+    max-width: none;
+    width: 100%;
+    padding: 10px;
+    max-height: none;
+    height: auto;
+    margin: 50px 0;
+  }
+  .ps-payment-solutions-images {
+      flex-direction: column;
+      padding: 10px;
+  }
+  .ps-payment-solutions-card {
+      width: 100%;
+  }
+}

@@ -1,0 +1,30 @@
+.icon-hw{
+    height: 25px;
+    width: 25px;
+}
+.mt-10{
+    margin-top: 19.3% ;
+}
+.form-card{
+    background-color: #F5F5F7;
+    border: 1px solid rgba(0, 0, 0, 0.5);;
+    border-radius: 8px;
+}
+.rounded-card{
+    border-radius: 8px;
+}
+.mx-85{
+    max-width: 85%;
+    margin-right: 2%;
+    padding: 12px;
+}
+  input[type="text"],input[type="email"],input[type="number"], textarea {
+    background-color : #F5F5F7 !important; 
+  }
+.radius-8{
+    border-radius: 8px !important;
+}
+
+.moa-gaming{
+    color: #1F2332 !important;
+}

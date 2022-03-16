@@ -1,0 +1,20 @@
+.text-with-image h2{
+ font-weight: bold;
+ font-size: 10vmin !important;
+}
+.text-with-image h4{
+    font-weight: bold;
+    font-size: 22px;
+}
+.bg-black{
+    background-color: #000;   
+}
+.img-with-text li{
+    line-height: 1.6rem;
+    color: #1F2332;
+    font-style: normal;
+    font-weight: 100;
+}
+.text-with-image p{
+    line-height: 1.8rem;
+}

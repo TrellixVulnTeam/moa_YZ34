@@ -1,0 +1,57 @@
+.btn-effect {
+    background: #06060a;
+    border: none;
+    top: 100%;
+    left: 50%;
+    padding: 10px 25px;
+    padding-left: 3em;
+    padding-right: 3em;
+    border-radius: 10px;
+    font-size: 18px;    
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+  
+  .btn-effect > a {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn-effect:hover {
+    background: linear-gradient(
+      90deg,
+      rgba(250, 75, 167, 1) 20%,
+      rgba(111, 63, 249, 1) 39%,
+      rgba(81, 140, 254, 1) 75%,
+      rgba(0, 209, 255, 1) 100%
+    );
+  }
+  
+  .btn-effect > a > span {
+    transition: all 0.3s ease;
+  }
+  
+  .btn-effect:hover > a > span {
+    transform: translateX(-5%);
+  }
+  
+  .btn-effect:hover > a > img {
+    transform: translateX(50%);
+  }
+  
+  .about-us-right-btn-icon {
+    height: 5px;
+    width: 5x;
+    margin-left: 10px;
+    transition: all 0.6s ease;
+  }
+  
+  .btn-effect > a:hover {
+    color: #fff !important;
+  }

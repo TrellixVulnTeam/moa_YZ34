@@ -1,0 +1,38 @@
+.img1,.img2,.img3,.img4,.img5 {
+    position: absolute;
+    height: 100%;
+  }
+    
+  .boxOverlay{
+    position:absolute;
+    bottom:10%;
+    width:15%;
+    height: 80px;
+    transition: all .75s;
+    overflow:hidden;
+    
+  }
+  .boxOverlay:hover{
+
+    height:250px;
+  }
+  .all-event-expo > img{
+    transition: transform .2s;
+  }
+
+  .img1:hover{
+    transform: scale(1.1);
+  }
+  .img2:hover{
+    transform: scale(1.1);
+  }
+  .img3:hover{
+    transform: scale(1.1);
+  }
+  .img4:hover{
+    transform: scale(1.1);
+  }
+  .img5:hover{
+    transform: scale(1.1);
+  }
+  
