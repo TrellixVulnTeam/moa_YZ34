@@ -8,10 +8,13 @@ import gear2 from '../../assets/img/gear2.svg';
 import retailIcon from '../../assets/img/retail-icon.svg';
 import '../../assets/css/our-solutions.css';
 
-const OurSolutions = (props)=>{
+const OurSolutions = (props)=>{ 
+    const onClick = (url) => {
+        window.location.href = url;
+      }
     return(
         <Row>
-                            <Col md={3}>
+                            <Col md={3} className="cursor-pointer" onClick={()=>onClick('turnkey-solution')}>
                                     <div className="door-effect text-blue ps-0">
                                         <div className="overlay overlay-blue"></div>
                                         <Image src={doors} className="door-img"/>
@@ -22,7 +25,7 @@ const OurSolutions = (props)=>{
                                         <br />
                                     </div>
                                 </Col>
-                                <Col md={3}>
+                                <Col md={3} className="cursor-pointer" onClick={()=>onClick('white-label-solution')}>
                                     <div className="door-effect text-pink ps-0">
                                         <div className="overlay overlay-pink"></div>
                                         <Image src={door} className="door-img"/>
@@ -31,7 +34,7 @@ const OurSolutions = (props)=>{
                                         <h3>White Label</h3>
                                     </div>
                                 </Col>
-                                <Col md={3}>
+                                <Col md={3} className="cursor-pointer" onClick={()=>onClick('api-solution')}>
                                     <div className="door-effect text-yellow ps-0">
                                         <div className="overlay overlay-yellow"></div>
                                         <Image src={door} className="door-img"/>
@@ -41,7 +44,7 @@ const OurSolutions = (props)=>{
                                         <h3>API</h3>
                                     </div>
                                 </Col>
-                                <Col md={3}>
+                                <Col md={3} className="cursor-pointer" onClick={()=>onClick('retail-betting-solution')}>
                                     <div className="door-effect text-green ps-0">
                                         <div className="overlay overlay-green"></div>
                                         <Image src={door} className="door-img"/>

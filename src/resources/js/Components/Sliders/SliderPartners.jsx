@@ -11,7 +11,7 @@ class SliderPartners extends Component{
   }
 
   componentDidMount() {
-    axios.get(process.env.MIX_APP_URL+`/hello.php?type=partner`)
+    axios.get(process.env.MIX_APP_URL+`/get-slider-images?type=our_partners&slider=`+this.props.sliderId)
       .then(res => {
         const images = res.data;
         console.log(images);

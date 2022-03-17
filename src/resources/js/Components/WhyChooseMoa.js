@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const WhyChooseMoa = (props) => {
     let style = null;
-    let clsName = "rounded";
+    let clsName = "radius-8";
     if (props.bgimg) {
         style = {
             background: `url(${process.env.MIX_PUBLIC_URL + props.bgimg})`,
@@ -11,7 +11,7 @@ const WhyChooseMoa = (props) => {
         style.backgroundSize = `cover`;
     }
     if (!props.bgimg) {
-        style = { backgroundColor: "#2e2e30" };
+        style = { backgroundColor: "#06060A" };
     }
     if (props.bgcolor) {
         style = { background: props.bgcolor };

@@ -56,19 +56,20 @@ export default function GamingSuite() {
                     bgcolor="rgba(81, 140, 254, 0.63)"
                     head="P2P Games"
                     footline="Competition Preceding Profit"
-                    text1="Satisfy the demands of your players by integrating MOA Gaming’s P2P Gaming as your most trustworthy option for players from different regions. We have a broad range of characteristic P2P games such as HOKM, Pasoor (Pasur), Belote, etc. We also present all the popular types of Poker in a variety of rooms and a wide range of tables. 
-    Two of the most popular types of Poker are Omaha and Texas Hold’em — introduced in our online poker software along with other less popular types. MOA Gaming’s online casino gaming platform — representing P2P gaming, provides your players with a customizable tournament lobby based on specific criteria, available in desktop and mobile versions."
+                    text1="Satisfy the demands of your players by integrating MOA Gaming’s P2P Gaming as your most trustworthy option for players from different regions. We have a broad range of characteristic P2P games such as HOKM, Pasoor (Pasur), Belote, etc. We also present all the popular types of Poker in a variety of rooms and a wide range of tables. "
+                    text1_2="Two of the most popular types of Poker are Omaha and Texas Hold’em — introduced in our online poker software along with other less popular types. MOA Gaming’s online casino gaming platform — representing P2P gaming, provides your players with a customizable tournament lobby based on specific criteria, available in desktop and mobile versions."
                     videoId="eS3TMgY1zOo"
                 />
                 <TextSection
                     overlayClass="blendBG"
                     bgimg="powerball-bg.png"
                     headColor="#FFFFFF"
+                    footlineColor="rgba(255, 255, 255, 0.8)"
                     bgcolor="rgba(235, 96, 169, 0.69)"
                     head="Powerball"
                     footline="Embrace The Hazard"
                     text1="MOA Gaming presents its original and outstanding product — the Powerball game. It’s a one-of-a-kind, highly engaging lottery game developed and produced by MOA Gaming. Powerball was designed to give your players an extraordinary gaming experience."
-                    text2="It provides 600 draws per day, and a new game starts every 5 minutes to give the players a unique opportunity to play and have a special Powerball gaming experience. Here, all the numbers are generated from official lottery draws, so you can confidently integrate the game into your online gaming and betting website. "
+                    text1_2="It provides 600 draws per day, and a new game starts every 5 minutes to give the players a unique opportunity to play and have a special Powerball gaming experience. Here, all the numbers are generated from official lottery draws, so you can confidently integrate the game into your online gaming and betting website. "
                     videoId="y30I4KNH3Mo"
                 />
                 <TextSection
@@ -76,15 +77,14 @@ export default function GamingSuite() {
                     bgimg="skill-quick-games.png"
                     headColor="#FFFFFF"
                     bgcolor="rgba(255, 205, 26, 0.66)"
-                    head="Skill Games"
+                    head="Skill & Quick Games"
                     footline="Your Chance To Perform"
                     text1="Add some irresistible excitement to the gaming experience of your players with our wide range of popular skill games from world-class providers. Use our easily customizable product features to achieve extensive control over the platform. "
-                    text2="Your players will have a convenient gaming environment and a sense of anticipation to take part in it again. We provide web and mobile versions of exceptional skill games, as well as accessible app support. Level your players’ online gaming experience up by offering them to participate in global and local tournaments on our comprehensive platform. "
-                    text3="We present the most unusual, region-specific games to make your online casino and gaming business stand out and receive more revenue. We offer various games like Keno, Fantasy Sports, Blackjack, Penalty, Dominoes, and more. "
+                    text1_2="Your players will have a convenient gaming environment and a sense of anticipation to take part in it again. We provide web and mobile versions of exceptional skill games, as well as accessible app support. Level your players’ online gaming experience up by offering them to participate in global and local tournaments on our comprehensive platform. "
+                    text2="We present the most unusual, region-specific games to make your online casino and gaming business stand out and receive more revenue. We offer various games like Keno, Fantasy Sports, Blackjack, Penalty, Dominoes, and more. "
                     footline2="Fast And Furious"
-                    footline2text="Grant your users the extraordinary chance of playing MOA Gaming’s dynamic and superior quick games such as Blast, Crystal Crush, Big Hi Lo, Mines, X50 Wheel, etc. 
-
-                    These engaging games were designed for every player to have mobile and desktop access and, therefore, a more practical and exciting experience. The games are based on the RNG system and contain configurations per our partners’ needs. "
+                    footline2text="Grant your users the extraordinary chance of playing MOA Gaming’s dynamic and superior quick games such as Blast, Crystal Crush, Big Hi Lo, Mines, X50 Wheel, etc. "
+                    footline2_2text= "These engaging games were designed for every player to have mobile and desktop access and, therefore, a more practical and exciting experience. The games are based on the RNG system and contain configurations per our partners’ needs. "
                     videoId="0zdDMzRYIZs"
                 />
                 <Features

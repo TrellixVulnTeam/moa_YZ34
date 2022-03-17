@@ -20,8 +20,10 @@ class FeatureCard extends Component {
         if (this.props.btnclass) {
             btnclass = this.props.btnclass;
         }
+        const mainClass = this.props.mainClass ? this.props.mainClass : '';
+
         return (
-            <Container className="px-md-5 px-sm-1">
+            <Container className={"px-md-5 px-sm-1 " + mainClass}>
                 <div className="row align-items-md-stretch justify-content-center">
                     <div className="col-md-4">
                         <div

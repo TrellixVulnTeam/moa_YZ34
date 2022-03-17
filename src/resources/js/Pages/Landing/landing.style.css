@@ -449,3 +449,9 @@ h1.liener-gredient {
       top: -47vh !important;
     }
 }
+.cursor-pointer{
+    cursor: pointer;
+}
+.text-fff{
+    color: #FFFFFF;
+}

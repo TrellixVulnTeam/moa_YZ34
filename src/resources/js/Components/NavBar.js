@@ -8,7 +8,7 @@ import { Switch, Route, Link } from 'react-router-dom';
 import '../assets/css/navbar.css';
 const NavBar=(props)=>
 {
-  let logo = '/images/moa-logo.png';
+  let logo = '/images/moa-logo.svg';
   if(props.logo){
     logo = '/images/'+props.logo;
   }
@@ -28,7 +28,7 @@ const NavBar=(props)=>
     <Navbar  expand="lg" className="container-fluid nav-bg d-flex align-items-center justify-content-between me-1" style={navbarStyle}>
     <Container  fluid>
     <a href="/" className='navbar-brand'>
-      <img src={logo} className="py-2" style={{ paddingLeft:'20%',width:'50%' }}  alt="logo" />
+      <img src={logo} className="ps-sm-5" alt="moa logo" />
     </a>
     <Navbar.Toggle aria-controls="navbarScroll" />
     <Navbar.Collapse id="navbarScroll">

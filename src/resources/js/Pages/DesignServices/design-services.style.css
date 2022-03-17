@@ -29,7 +29,7 @@
 }
 
 .ds-header-wrapper > p {
-  font-size: 20px;
+  font-size: 20px !important;
   line-height: 30px;
   width: 1400px;
   margin-bottom: 30px;
@@ -39,7 +39,7 @@
   position: absolute;
   background-color: #e6e6ef;
   width: 100vw;
-  height: 100px;
+  height: 200px;
   top: 0;
   left: 0;
   z-index: 0;
@@ -202,7 +202,7 @@
     width: 800px;
   }
   .ds-header-wrapper > p {
-    font-size: 16px;
+    font-size: 16px !important;
     line-height: 24px;
     width: 800px;
     margin-bottom: 30px;
@@ -257,7 +257,7 @@
   }
   .ds-header-wrapper > p,
   .ds-row-text p {
-    font-size: medium;
+    font-size: medium !important;
     padding: 0 10px;
     line-height: 1.5;
     width: 80vw;

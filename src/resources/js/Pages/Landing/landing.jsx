@@ -22,6 +22,9 @@ export default function Landing() {
             duration: 1600,
         });
     }, []);
+    const onClick = (url) => {
+        window.location.href = url;
+      }
     return (
         <Container fluid>
             <NavBar/>
@@ -66,27 +69,21 @@ export default function Landing() {
                     <div className="container ">
                         <div className="section-title mt-5 justify-content-center mt-5">
                             <div className="mt-5 pt-5"></div>
-                            <h2>Who We Are </h2>
-                            <p className="fs-5 d-inline-block who-text">
-                                Meet MOA Gaming's all-inclusive and accessible
-                                Gaming platform, where you can grow or start up
-                                your business in a short time frame.
-                                Uncomplicated and manageable, our Gaming
-                                software solution is designed to help operators
-                                launch their limitless betting and gaming
-                                business.
+                            <h2>Who We Are </h2> 
+                            <p className="fs-5 d-inline-block who-text" style={{  textTransform: 'none', width:'80%'}}>
+                            Meet MOA Gaming’s all-inclusive and accessible iGaming platform, 
+                            where you can grow or start up your business in a short time frame. 
+                            Uncomplicated and manageable, our iGaming software solution is designed to help 
+                            operators launch their limitless betting and gaming business.
                             </p>
-                            <p className="fs-5 d-inline-block who-text">
-                                At MOA Gaming, we know how to meet the needs of
-                                every business, big or small, and we tailor
-                                solutions to your specific business goals and
-                                target markets. We'll help you build a solid
-                                virtual presence with excellent performance and
-                                player satisfaction. MO Gaming values your trust
-                                and aims to satisfy your Gaming demands every
-                                step of the way, 24/7.
+                            <p className="fs-5 d-inline-block who-text" style={{  textTransform: 'none', width:'80%'}}>
+                                At MOA Gaming, we know how to meet the needs of every business, big or small,
+                                and we tailor solutions to your specific business goals and target markets. 
+                                We’ll help you build a solid virtual presence with excellent performance and 
+                                player satisfaction. MOA Gaming values your trust and aims to satisfy your 
+                                iGaming demands every step of the way, 24/7.
                             </p>
-                            <p className="fs-5 d-inline-block who-text">
+                            <p className="fs-5 d-inline-block who-text" style={{  textTransform: 'none', width:'80%'}}>
                                 With MOA Gaming's Gaming software, high-quality
                                 service, flexible products, and strong security,
                                 you'll have everything you need to start an
@@ -132,7 +129,8 @@ export default function Landing() {
                                     style={{ paddingRight: "0" }}
                                 >
                                     <div
-                                        className="ps-3 pb-4 d-flex align-items-end m-box-h col11"
+                                        className="ps-3 pb-4 d-flex align-items-end m-box-h col11  cursor-pointer"
+                                        onClick={()=>onClick('/sportsBettingSoftware')}
                                         style={{
                                             backgroundColor: "#6F7AA5",
                                             height: "500px",
@@ -150,7 +148,8 @@ export default function Landing() {
                                     style={{ paddingRight: "0" }}
                                 >
                                     <div
-                                        className="ps-2 pb-2 m-box-h d-flex align-items-end col22"
+                                        className="ps-2 pb-2 m-box-h d-flex align-items-end col22  cursor-pointer"
+                                        onClick={()=>onClick('/gaming-suite')}
                                         style={{
                                             backgroundColor: "#D5D9E8",
                                             height: "270px",
@@ -162,7 +161,8 @@ export default function Landing() {
                                         </h1>
                                     </div>
                                     <div
-                                        className="ps-2 pb-4 mt-2 m-box-h d-flex align-items-end "
+                                        className="ps-2 pb-4 mt-2 m-box-h d-flex align-items-end cursor-pointer"
+                                        onClick={()=>onClick('/affilateandagentplatforms')}
                                         style={{
                                             backgroundColor: "#E5CFBE",
                                             height: "222px",
@@ -179,7 +179,8 @@ export default function Landing() {
                                     style={{ paddingRight: "0" }}
                                 >
                                     <div
-                                        className="ps-2 pb-2 m-box-h d-flex align-items-end"
+                                        className="ps-2 pb-2 m-box-h d-flex align-items-end  cursor-pointer"
+                                        onClick={()=>onClick('/payment-solution')}
                                         style={{
                                             backgroundColor: "#CDE8CD",
                                             height: "215px",
@@ -190,7 +191,8 @@ export default function Landing() {
                                         </h1>
                                     </div>
                                     <div
-                                        className="ps-2 pb-4 mt-2 m-box-h d-flex align-items-end"
+                                        className="ps-2 pb-4 mt-2 m-box-h d-flex align-items-end cursor-pointer"
+                                        onClick={()=>onClick('/notification-app')}
                                         style={{
                                             backgroundColor: "#E0CBE0",
                                             maxWidth: "100%",
@@ -244,15 +246,15 @@ export default function Landing() {
                             </div>
                             <div className="col-md-8 ps-5 mt-3 mb-5 pt-5">
                                 <div className="ps-3 ms-5">
-                                    <h2 className="fw-bold mt-5">Online Gaming License </h2>
-                                    <h1 className="liener-gredient mt-3 ">
+                                    <h2 className="fw-bold mt-5 cursor-pointer" onClick={()=>onClick('/onilne-gaming')}>Online Gaming License </h2>
+                                    <h1 className="liener-gredient mt-3 cursor-pointer" onClick={()=>onClick('/247-customer-support')}>
                                         Customer <br/> Support Service{" "}
                                     </h1>
                                     <div className="services-li mt-4 pt-5">
-                                    <h3 className="text-light fw-bold">Marketing Services</h3>
-                                    <h3 className="text-light fw-bold">Design Services</h3>
-                                    <h3 className="text-light fw-bold">Risk Management</h3>
-                                    <h3 className="text-light fw-bold">Sports Sponsorship Advertisement</h3>
+                                    <h3 className="text-fff fw-bold cursor-pointer" onClick={()=>onClick('/marketing-services')}>Marketing Services</h3>
+                                    <h3 className="text-fff fw-bold cursor-pointer" onClick={()=>onClick('/design-services')}>Design Services</h3>
+                                    <h3 className="text-fff fw-bold cursor-pointer">Risk Management</h3>
+                                    <h3 className="text-fff fw-bold cursor-pointer">Sports Sponsorship Advertisement</h3>
                                 </div>
                                 </div>
                             </div>
@@ -265,8 +267,8 @@ export default function Landing() {
                         <div className="section-title pt-5">
                             <h2>Our Partners </h2>
                             <p>Best providers of the entire industry.</p>
-                            <SliderPartners />
-                            <SliderPartners />
+                            <SliderPartners sliderId="1" />
+                            <SliderPartners sliderId="2" />
                         </div>
                     </div>
                 </section>

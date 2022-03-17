@@ -93,9 +93,9 @@ class SportsBettingSoftware extends Component {
                     </Row>
                 </section>
                 <section id="sportsbook" className="pt-5">
-                        <div className="pt-5 mt-5" style={{paddingLeft:'8rem',paddingRight:'8rem'}}>
+                        <div className="pt-5 mt-5">
                             <Row className="mt-5 justify-content-center">
-                                <Col md="4 mt-4">
+                                <Col md="3 mt-4">
                                     <div className="p-4 bdr card-three-bg"  style={{ backgroundColor: "#8F6FEC" }} >
                                         <div className="d-flex">
                                             <img
@@ -134,7 +134,7 @@ class SportsBettingSoftware extends Component {
                                     </div>
                                 </Col>
 
-                                <Col md="4 mt-4">
+                                <Col md="3 mt-4">
                                     <div
                                         className="p-4 bdr card-three-bg"
                                         style={{ backgroundColor: "#54BBC1" }}
@@ -161,7 +161,7 @@ class SportsBettingSoftware extends Component {
                                     </div>
                                 </Col>
 
-                                <Col md="4 mt-4">
+                                <Col md="3 mt-4">
                                     <div
                                         className="p-4 bdr card-three-bg"
                                         style={{ backgroundColor: "#4F8DDE" }}
@@ -204,7 +204,7 @@ class SportsBettingSoftware extends Component {
                                 </Col>
                             </Row>
                             <Row className="justify-content-center">
-                                <Col md="12 mt-4 mb-5">
+                                <Col md="9 mt-4 mb-5">
                                     <div
                                         className="p-4 bdr"
                                         style={{ backgroundColor: "#DCDCE8" }}

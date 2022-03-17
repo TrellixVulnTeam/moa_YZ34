@@ -1,0 +1,219 @@
+.ms-wrappter {
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.ms-header-p {
+  width: 1000px;
+  max-width: 90%;
+}
+
+.ms-img-wrapper {
+  position: relative;
+  text-align: center;
+}
+
+.ms-img-wrapper > img {
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+  max-width: 90%;
+  width: 1300px;
+}
+
+.ms-text-section {
+  width: 1200px;
+  margin: 80px auto;
+  display: flex;
+}
+
+.ms-text-section > h1,
+.ms-text-section > div {
+  width: 50%;
+  padding: 20px;
+}
+
+.ms-text-section > h1 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 75px;
+}
+
+.ms-text-section > div > h6 {
+  color: #1f2332;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+}
+
+.ms-text-section > div > p {
+  font-size: 18px !important;
+  line-height: 32px;
+}
+
+.ms-cards-container {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+.ms-card {
+  background-color: #1d1d1f;
+  padding: 80px 50px;
+  width: 533px;
+  height: 604px;
+  margin: 0 5px;
+  color: #fff;
+}
+
+.ms-card h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 50px;
+}
+
+.ms-card p {
+  font-size: 16px !important;
+  color: #e1e5ee;
+  line-height: 32px;
+}
+
+.ms-lined-text-section {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.ms-divider {
+  height: 9px;
+  width: 37px;
+  background-color: black;
+}
+
+.ms-lined-text-section p {
+  width: 1200px;
+  max-width: 90vw;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.ms-dark-text {
+  width: 1600px;
+  max-width: 90vw;
+  padding: 30px 90px;
+  background-color: #1d1d1f;
+  color: white;
+  margin: 0px auto;
+  margin-bottom: 100px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ms-dark-text > h1 {
+  width: 40%;
+  font-size: 82px !important;
+  line-height: 100px;
+  font-weight: 700;
+}
+
+.ms-dark-text > p {
+  width: 60%;
+  font-size: 24px !important;
+}
+
+@media (max-width: 1400px) {
+  .ms-text-section {
+    width: 1000px;
+  }
+  .ms-text-section > h1 {
+    font-size: 51.2px;
+  }
+  .ms-text-section > div > h6 {
+    font-size: 19.2px;
+    line-height: 25.6px;
+  }
+  .ms-text-section > div > p {
+    font-size: 14.4px !important;
+    line-height: 25.6px;
+  }
+  .ms-card h2 {
+    font-size: 19.2px !important;
+    line-height: 24px;
+  }
+  .ms-card p {
+    font-size: 12.8px !important;
+    line-height: 25.6px;
+  }
+  .ms-lined-text-section {
+    height: 250px;
+    margin-bottom: 100px;
+  }
+  .ms-dark-text > h1 {
+    font-size: 65.6px !important;
+  }
+  .ms-dark-text {
+    padding: 30px 60px;
+  }
+  .ms-dark-text > p {
+    font-size: 19px !important;
+    line-height: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .ms-text-section {
+    flex-direction: column;
+    width: 100vw;
+    max-width: none;
+    height: auto;
+  }
+  .ms-text-section > h1,
+  .ms-text-section > div {
+    width: 100%;
+  }
+  .ms-cards-container {
+    flex-direction: column;
+    padding: 10px;
+    width: 100vw;
+    max-width: none;
+  }
+  .ms-card {
+    margin: 50px auto;
+    width: 100vw;
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  .ms-lined-text-section {
+    height: auto;
+  }
+  .ms-divider {
+    height: 3px;
+    width: 10px;
+  }
+  .ms-lined-text-section p {
+    font-size: 14px !important;
+  }
+  .ms-dark-text {
+    flex-direction: column;
+    padding: 50px 20px;
+  }
+  .ms-dark-text > h1 {
+    width: 100%;
+    font-size: xx-large !important;
+    line-height: 1.5;
+  }
+  .ms-dark-text > p {
+    font-size: medium;
+    line-height: 1.5;
+    width: 100%;
+    margin: 20px 0;
+  }
+}

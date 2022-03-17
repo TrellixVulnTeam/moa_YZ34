@@ -10,7 +10,7 @@ const BlogItem = (props) => {
       }
     
     return (
-        <div className={"col-md-12 "+margin } style={{cursor:'pointer'}}  onClick={onClick}>
+        <div className={"col-md-12 cursor-pointer "+margin }>
             <div className="border rounded text-md-start position-relative">
                 <h1
                     className="fw-bold text-light p-3 blog-title"

@@ -5,12 +5,11 @@ import '../../assets/css/text-with-img.css';
 
 class TextWithImg extends Component{
     render(props){
-        let btnClass = '';
+        let btnClass = 'slideRightAnimate';
         if(this.props.btnHide=="true")
         {
             btnClass = 'd-none'
         }
-        console.log(this.props.link);
         return(
             <Row className="text-with-image">
                 <Col md='1'></Col>
