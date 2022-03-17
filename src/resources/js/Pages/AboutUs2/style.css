@@ -319,7 +319,7 @@
 
     /* who we are  */
     .about-us-who-we-are-wrapper {
-        height: 150vh;
+        height: 125vh;
     }
     .about-us-who-we-are-wrapper > h1 {
         font-size: 86px !important;

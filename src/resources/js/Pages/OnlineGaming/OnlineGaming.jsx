@@ -21,6 +21,7 @@ import license from '../../assets/img/licence.png'
 export default function OnlineGaming() {
     return (
         <div class="og-wrapper">
+            <NavBar />
             <div className='ds-header-wrapper'>
                 <h1>Online Gaming </h1>
                 <h6>License </h6>
@@ -143,6 +144,7 @@ export default function OnlineGaming() {
                     <img src={Book} />
                 </div>
             </div>
+            <Footer />
         </div>
     );
 }

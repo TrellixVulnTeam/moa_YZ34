@@ -246,7 +246,7 @@ export default function Landing() {
                             </div>
                             <div className="col-md-8 ps-5 mt-3 mb-5 pt-5">
                                 <div className="ps-3 ms-5">
-                                    <h2 className="fw-bold mt-5 cursor-pointer" onClick={()=>onClick('/onilne-gaming')}>Online Gaming License </h2>
+                                    <h2 className="fw-bold mt-5 cursor-pointer" style={{ fontSize:'4.8vmin'}} onClick={()=>onClick('/onilne-gaming')}>Online Gaming License </h2>
                                     <h1 className="liener-gredient mt-3 cursor-pointer" onClick={()=>onClick('/247-customer-support')}>
                                         Customer <br/> Support Service{" "}
                                     </h1>
@@ -276,7 +276,7 @@ export default function Landing() {
                 <section>
                     <Container>
                         <div className="section-title pb-5 mb-5 pt-5">
-                            <WhyChooseMoa className="border-radius-25" justify="center" bgcolor="#1F2332"/>
+                            <WhyChooseMoa className="border-radius-25" justify="center" bgcolor="#1F2332" opacity="0.6"/>
                         </div>
                     </Container>
                 </section>

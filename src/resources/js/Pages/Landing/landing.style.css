@@ -218,7 +218,7 @@ h1.liener-gredient {
         center;
     width: 100%;
     min-height: 100vh;
-    background-size: contain;
+    background-size: cover;
     position: relative;
     /* background-attachment: fixed; */
     color: #fff !important;
